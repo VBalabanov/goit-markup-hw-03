@@ -1,0 +1,433 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+}
+
+/* Глобальный бордер бокс */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-text-color);
+}
+/*цвет шрифта заголовков #212121 */
+/*цвет шрифта текста #757575 */
+/*цвет фона хедера #FFFFFF*/
+/*осн цвет фона #FFFFFF */
+/*доп цвет фона #F5F4FA */
+/*цвет фона футера #2F303A */
+/*цвет шрифта заголовков футера #FFFFFF */
+/*цвет шрифта текста в футере rgba(255, 255, 255, 0.6) */
+/*акцент #2196F3 */
+
+/* Container */
+
+.container {
+    width: 1200px;    
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header */
+
+.header-items {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+}
+.accent {
+    color: var(--accent-color);
+}
+
+.logo-nav {
+    display: flex;
+}
+
+.site-nav {
+    display: flex;
+    margin-right: 331px;
+}
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14x;
+    letter-spacing: 0.02em;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.contact-links {
+    display: flex;
+}
+
+.contact-links .item + .item {
+    margin-left: 50px;
+}
+
+.contact-links .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.contact-links .link:hover, 
+.contact-links .link:focus {
+    color: var(--accent-color);
+}
+
+/* Hero */
+
+/* ВРЕМЕННЫЙ ЦВЕТ ФОНА */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color:  #2F303A;
+}
+
+.hero-title {
+    margin-top: 200;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* Section */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Features */
+
+.features-list {
+    display: flex;
+    justify-content: center;
+}
+
+.features-list .item:not(:last-child) {
+    margin-right: 30px;
+}  
+
+.features-list .title {
+    margin-top: 94px;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-list .text {
+    margin-top: 0;
+    margin-bottom: 94px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+}
+
+/* Services */
+.services-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.services-list .item:not(:last-child) {
+    margin-right: 30px;
+}  
+
+
+/* Team */
+.team {
+    padding-top: 89px;
+    padding-bottom: 99px;
+    background-color: #F5F4FA;
+}
+.team .section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-list .team-member:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list .title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-list .text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-member{
+    background-color: #fff; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    color: var(--title-text-color);
+    background-color: #F5F4FA; 
+}
+.button.primary {
+    border-radius: 4px;
+    padding: 6px 22px;
+    margin-bottom: 32px;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+}
+.button.primary:hover, 
+.button.primary:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+}
+.button.secondary {
+    border-radius: 4px;
+    padding: 10 px 32 px;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.06em;
+    font-family: inherit;
+}
+/* Временно поставил эти цвета. ПОМЕНЯТЬ когда будут известны правильные */
+.button.secondary:hover, 
+.button.secondary:focus {
+    background-color: #F5F4FA;
+    color: var(--title-text-color);
+}
+/* Footer */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+    min-height: 252px;
+}
+
+.footer-logo {
+    margin-bottom: 20;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.footer-address {
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+
+.footer-links .item {
+    margin-top: 9px;
+}
+
+.footer-links .link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    font-style: normal;
+}
+.footer .link:hover, 
+.footer .link:focus {
+    color: var(--accent-color);
+}
+
+
+.container1 {
+    width: 1200px;    
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Portfolio */
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.portfolio-buttons .item:not(:last-child) {
+    margin-right: 8px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.portfolio-list .portfolio-item {
+    padding-top: 0;
+    background-color: #fff;
+    border: 1px solid #EEEEEE;
+    width: 370;
+    height: 404;
+}
+
+.portfolio-item:nth-child(3n + 3) {
+    gap: 0
+}
+
+.portfolio-item .title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */  
+    letter-spacing: 0.06em;
+}
+.portfolio-item .text {
+    margin-bottom: 20px;
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+}
