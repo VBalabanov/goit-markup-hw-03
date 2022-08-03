@@ -144,7 +144,6 @@ h3 {
 }
 
 .hero-title {
-    margin-top: 200;
     margin-bottom: 30px;
     color: #fff;
     font-weight: 900;
@@ -157,14 +156,9 @@ h3 {
 
 /* Section */
 
-.section {
+section {
     padding-top: 94px;
     padding-bottom: 94px;
-}
-
-.section.no-padding {
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 .section-title {
@@ -183,12 +177,15 @@ h3 {
     justify-content: center;
 }
 
+.features-list .item {
+    width: 270px;
+}
+
 .features-list .item:not(:last-child) {
     margin-right: 30px;
 }  
 
 .features-list .title {
-    margin-top: 94px;
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
@@ -199,7 +196,6 @@ h3 {
 }
 .features-list .text {
     margin-top: 0;
-    margin-bottom: 94px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -208,11 +204,15 @@ h3 {
 }
 
 /* Services */
+
+.services {
+    padding-top: 0;
+}
+
 .services-list {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 
 .services-list .item:not(:last-child) {
@@ -222,8 +222,6 @@ h3 {
 
 /* Team */
 .team {
-    padding-top: 89px;
-    padding-bottom: 99px;
     background-color: #F5F4FA;
 }
 .team .section-title {
@@ -240,8 +238,12 @@ h3 {
     margin-right: 30px;
 }
 
-.team-list .title {
+.team-member .inscription {
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team-member .title {
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
@@ -251,9 +253,8 @@ h3 {
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team-list .text {
+.team-member .text {
     margin-top: 0;
-    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -278,7 +279,6 @@ h3 {
 .button.primary {
     border-radius: 4px;
     padding: 6px 22px;
-    margin-bottom: 32px;
     color: var(--title-text-color);
     background-color: #F5F4FA;
     font-weight: 500;
@@ -370,7 +370,6 @@ h3 {
     color: var(--accent-color);
 }
 
-
 .container1 {
     width: 1200px;    
     margin: 0 auto;
@@ -379,15 +378,15 @@ h3 {
 }
 
 /* Portfolio */
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+.portfolio-header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .portfolio-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .portfolio-buttons .item:not(:last-child) {
@@ -412,10 +411,12 @@ h3 {
     gap: 0
 }
 
+.portfolio-item .inscription {
+    margin: 20px 24px;
+}
+
 .portfolio-item .title {
-    margin-top: 20px;
     margin-bottom: 4px;
-    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -423,8 +424,6 @@ h3 {
     letter-spacing: 0.06em;
 }
 .portfolio-item .text {
-    margin-bottom: 20px;
-    margin-left: 24px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
